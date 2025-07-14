@@ -1,0 +1,239 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/reset.scss';
+@import '../../styles/global.scss';
+
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+
+    &_container {
+        padding: 10px 15px;
+    }
+
+    &__newletter-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+
+    &__label-inp {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        font-size: 16px;
+        color: var(--color-gray);
+
+    }
+
+    &__input {
+        padding: 10px 15px;
+        border: none;
+    }
+
+    &__hr {
+        border: 1px solid var(--color-black);
+        margin: 0 0 10px;
+
+        &-error {
+            border-color: var(--color-red);
+        }
+    }
+
+    &__hr-top {
+        display: none;
+    }
+
+    &__subscribe-btn {
+        max-width: 100px;
+        border-radius: 6px;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-size: 16px;
+        padding: 7px 10px;
+        border: none;
+    }
+
+    &__div-check {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    &__check {
+        margin-right: 5px;
+
+        &-inp {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    &__list-item {
+        width: fit-content;
+        block-size: fit-content;
+    }
+
+    &__links {
+        color: var(--color-gray);
+        text-transform: uppercase;
+
+        margin-bottom: 32px;
+    }
+
+    &__media {
+        margin-bottom: 36px;
+    }
+
+    &__media-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &::before {
+            content: 'Follow us';
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    &__text {
+        color: var(--color-gray);
+    }
+
+
+
+    @media (min-width: $tablet) {
+        // max-width: $tablet
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 40px;
+            width: 100%;
+
+        }
+
+        &__newletter-content {
+            grid-column: 2/3;
+        }
+
+        &__links {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        &__media {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin: 10px auto 0;
+
+        }
+
+        &__text-content {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            margin-top: 70px;
+        }
+
+        &__media-list::before {
+            display: none;
+        }
+
+        &__check-inp {
+            font-size: 18px;
+        }
+
+        &__hr-top {
+            display: block;
+            width: 100%;
+            border: 1px solid var(--color-gray);
+            margin-bottom: 30px;
+        }
+
+    }
+
+
+    @media (min-width: $desktop) {
+
+
+        &__container {
+            width: 100%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 1fr auto; // первый столбец растягивается, второй под контент
+            column-gap: 140px;
+            row-gap: 5px;
+            align-items: start; // все элементы на одну высоту сверху
+            width: 100%;
+            padding: 10px 25px;
+        }
+
+        &__list {
+            flex-direction: row;
+            font-size: 14px;
+
+        }
+
+        &__newletter-content {
+            min-width: 350px;
+            margin-top: -15px;
+            margin-bottom: 10px;
+            align-self: start;
+        }
+
+        &__media {
+            justify-self: end;
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        &__label-inp {
+            font-size: 18px;
+        }
+
+
+        &__text-content {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        &__hr-top {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+a {
+    color: var(--color-gray);
+
+    &:hover {
+        color: var(--color-black);
+    }
+}
+
+.hide-decor {
+    display: none;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+ul {
+    list-style: none;
+}

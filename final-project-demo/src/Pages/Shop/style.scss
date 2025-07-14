@@ -1,0 +1,417 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/reset.scss';
+@import '../../styles/global.scss';
+
+
+.shop__wrapper {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+
+.svg_close {
+    display: none;
+}
+
+
+.btn--open {
+    background: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    & svg:first-child {
+        display: none;
+    }
+
+
+
+}
+
+.filters {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 auto;
+
+
+    &__setting {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 10px;
+
+    }
+
+    &__container_asides {
+        display: none;
+
+        &--open {
+            margin-top: -40px;
+            display: block;
+            background-color: var(--color-light-gray);
+            width: 100%;
+            min-width: 440px;
+            padding: 15px 10px;
+            border-radius: 10px;
+            // margin-bottom: 10px;
+
+            .svg_close {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+        }
+    }
+
+    &__clean_btn {
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: var(--color-dark-gray);
+        color: var(--color-white);
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        max-width: 50px;
+        margin: 15px;
+        border-style: none;
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
+    &__aside {
+        // position: absolute;
+        // top: 80px;
+        z-index: 8;
+        width: 100%;
+
+        &--open {
+            //  top: 50px;
+            max-width: 770pxpx;
+            margin: 0 auto;
+        }
+    }
+
+    &__name {
+        text-align: left;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--color-dark-gray);
+        margin-bottom: 10px;
+    }
+
+    &__search {
+        position: relative;
+
+
+        label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: var(--color-dark-gray);
+        }
+
+        .filters__input_search {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            background-color: white;
+        }
+    }
+
+    &__select,
+    &__category {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 4px;
+        border: none;
+        background-color: white;
+        font-size: 14px;
+        color: var(--color-dark-gray);
+    }
+
+    &__price_div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        min-height: 40px;
+        border: none;
+    }
+
+    &__min input,
+    &__max input {
+        border-radius: 10px;
+        border: none;
+        max-width: 100px;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+    &__min,
+    &__max {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__div_sort select {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: none;
+        background-color: white;
+        font-size: 14px;
+        color: var(--color-dark-gray);
+    }
+
+    &__sale_div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__sale_title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    @media (min-width: $tablet) {
+        margin-top: 20px;
+
+        &__aside {
+            position: sticky;
+            top: 125px;
+            display: block;
+            min-width: 250px;
+            border-radius: 10px;
+            background-color: var(--color-light-gray);
+        }
+
+        .svg_close {
+            display: none;
+        }
+
+        &__container_asides {
+            min-width: 0px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__sale_div {
+            position: relative;
+            font-size: 14px;
+            gap: 5px;
+        }
+
+        &__price_div {
+            margin-bottom: 10px;
+        }
+
+        &__div_sort select {
+            max-width: 120px;
+        }
+
+        &__sale_title {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-size: 14px;
+            text-wrap: nowrap;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        &__container_asides {
+            font-size: 16px;
+        }
+
+
+        &__select,
+        &__category,
+        &__div_sort select {
+            font-size: 16px;
+        }
+
+    }
+}
+
+option {
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    & button {
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 40px;
+    }
+
+    .active {
+        background-color: var(--color-light-brown);
+    }
+}
+
+.item {
+    column-gap: 20px;
+}
+
+.catalog {
+    margin: 0 auto 20px;
+    padding: 5px 15px;
+
+    &--open {
+        margin-top: 10px;
+    }
+
+    @media (min-width: $tablet) {
+        margin-top: 20px;
+    }
+}
+
+.catalog__container .out {
+    display: grid;
+    grid-template-columns: repeat(2, 1ft);
+
+    gap: 15px;
+
+    @media (min-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+
+    }
+
+    @media (min-width: $desktop) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+
+
+.checkbox-wrapper-9 .tgl {
+    display: none;
+}
+
+.checkbox-wrapper-9 .tgl,
+.checkbox-wrapper-9 .tgl:after,
+.checkbox-wrapper-9 .tgl:before,
+.checkbox-wrapper-9 .tgl *,
+.checkbox-wrapper-9 .tgl *:after,
+.checkbox-wrapper-9 .tgl *:before,
+.checkbox-wrapper-9 .tgl+.tgl-btn {
+    box-sizing: border-box;
+}
+
+.checkbox-wrapper-9 .tgl::-moz-selection,
+.checkbox-wrapper-9 .tgl:after::-moz-selection,
+.checkbox-wrapper-9 .tgl:before::-moz-selection,
+.checkbox-wrapper-9 .tgl *::-moz-selection,
+.checkbox-wrapper-9 .tgl *:after::-moz-selection,
+.checkbox-wrapper-9 .tgl *:before::-moz-selection,
+.checkbox-wrapper-9 .tgl+.tgl-btn::-moz-selection,
+.checkbox-wrapper-9 .tgl::selection,
+.checkbox-wrapper-9 .tgl:after::selection,
+.checkbox-wrapper-9 .tgl:before::selection,
+.checkbox-wrapper-9 .tgl *::selection,
+.checkbox-wrapper-9 .tgl *:after::selection,
+.checkbox-wrapper-9 .tgl *:before::selection,
+.checkbox-wrapper-9 .tgl+.tgl-btn::selection {
+    background: none;
+}
+
+.checkbox-wrapper-9 .tgl+.tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-wrapper-9 .tgl+.tgl-btn:after,
+.checkbox-wrapper-9 .tgl+.tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+
+.checkbox-wrapper-9 .tgl+.tgl-btn:after {
+    left: 0;
+}
+
+.checkbox-wrapper-9 .tgl+.tgl-btn:before {
+    display: none;
+}
+
+.checkbox-wrapper-9 .tgl:checked+.tgl-btn:after {
+    left: 50%;
+}
+
+.checkbox-wrapper-9 .tgl-flat+.tgl-btn {
+    padding: 2px;
+    transition: all 0.2s ease;
+    background: #fff;
+    border: 4px solid #f2f2f2;
+    border-radius: 2em;
+}
+
+.checkbox-wrapper-9 .tgl-flat+.tgl-btn:after {
+    transition: all 0.2s ease;
+    background: #f2f2f2;
+    content: "";
+    border-radius: 1em;
+}
+
+.checkbox-wrapper-9 .tgl-flat:checked+.tgl-btn {
+    border: 4px solid #7FC6A6;
+}
+
+.checkbox-wrapper-9 .tgl-flat:checked+.tgl-btn:after {
+    left: 50%;
+    background: #7FC6A6;
+}

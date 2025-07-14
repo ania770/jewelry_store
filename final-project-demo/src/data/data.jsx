@@ -1,0 +1,67 @@
+export const bannerJewelryItems = [
+    { id: 51, name: "Gold Leaf Earrings", price: 95, imageUrl: "https://images.squarespace-cdn.com/content/v1/5f907af9d81b5466acc11a33/1667593410024-EM3CWIOFM8XHO9JLVWUY/NHJQ396194.jpeg?format=1000w", discount: true, category: "earrings", alloy: "gold" },
+    { id: 52, name: "Silver Star Pendant", price: 70, imageUrl: "https://cdn.notonthehighstreet.com/fs/79/50/a790-e1a8-4436-95b9-751c05cb100b/original_solid-silver-star-necklace.jpg", discount: false, category: "pendants", alloy: "silver" },
+    { id: 53, name: "Rose Gold Heart Ring", price: 135, imageUrl: "https://us.pandora.net/dw/image/v2/AAVX_PRD/on/demandware.static/-/Sites-pandora-master-catalog/default/dwdad0e7f2/productimages/modeldetailshot_rect/188421C02_ABC123_MODEL_eCOM_02_RGB.jpg?sw=1200&sh=1200&sm=fit&sfrm=png&bgcolor=F5F5F5", discount: true, category: "rings", alloy: "rose gold" },
+    { id: 54, name: "Diamond Stud Earrings", price: 320, imageUrl: "https://neildahljewelers.com/cdn/shop/files/NDL_ITJ3580.jpg?v=1694818594&width=3001", discount: false, category: "earrings", alloy: "white gold" },
+    { id: 55, name: "Gold Twist Necklace", price: 180, imageUrl: "https://www.astridandmiyu.com/cdn/shop/files/AM23-Q3-N-DOUB-G_2.jpg?v=1724400990&width=1536", discount: true, category: "chains", alloy: "gold" }
+];
+
+
+export const jewelryItems = [
+    { id: 1, name: "Gold Hoop Ring", price: 120, imageUrl: "https://www.parfois.com/on/demandware.static/-/Sites-parfois-master-catalog/default/dwbcd1333e/images/hi-res/241/52/216849_GD_1yf.jpg", discount: true, category: "earrings", alloy: "gold" },
+    { id: 2, name: "Silver Stud Rings", price: 45, imageUrl: "https://light-catchers.ru/wp-content/uploads/2022/02/342434.png", discount: 20, category: "rings", alloy: "silver" },
+    { id: 3, name: "Rose Gold Drop Earrings", price: 89, imageUrl: "https://www.myjewellerystory.com.au/media/catalog/product/cache/2bded3bfd867d8574f9ff5ba7f720a6f/s/-/s-2016-avrs__1_1.jpg", discount: false, category: "earrings", alloy: "rose gold" },
+    { id: 4, name: "Diamond Hoop Earrings", price: 250, imageUrl: "https://michaelgabriels.com/cdn/shop/products/inside-outside-lab-grown-diamond-hoop-earrings-15049.jpg?v=1741378258", discount: false, category: "earrings", alloy: "white gold" },
+    { id: 5, name: "Pearl Dangle Earrings", price: 75, imageUrl: "https://www.pearlparadise.com/cdn/shop/products/eternal-collection-white-south-sea-100-110-mm-pearl-diamond-dangle-earrings-earring.jpg?v=1747898913&width=1080", discount: 10, category: "earrings", alloy: "silver" },
+    { id: 6, name: "Gold Chain Necklace", price: 150, imageUrl: "https://www.peoplesjewellers.com/productimages/processed/V-20374990_0_800.jpg?pristine=true", discount: 10, category: "chains", alloy: "gold" },
+    { id: 7, name: "Silver Chain Necklace", price: 60, imageUrl: "https://m.media-amazon.com/images/I/71F1VISOs4L.jpg", discount: false, category: "chains", alloy: "silver" },
+    { id: 8, name: "Rose Gold Pendant Necklace", price: 130, imageUrl: "https://img.piaget.com/open-graph-squared-boxed-image-1/o-dpr-2/6c42f060d5e22cbdbbe08ea0a6d12ff8c8851de0.jpg", discount: 15, category: "pendants", alloy: "rose gold" },
+    { id: 9, name: "Diamond Solitaire Pendant", price: 300, imageUrl: "https://cdn11.bigcommerce.com/s-7plbcvh/images/stencil/1280x1280/products/4093/18946/Solitaire_Diamond_Pendant_1.01_Carat_Diamond_Necklace_Solitaire_Pendant_GIA_Certified_14K_White_Gold_or_Yellow_Gold_Handmade___03288.1734711111.jpg?c=2", discount: false, category: "pendants", alloy: "white gold" },
+    { id: 10, name: "Gold Heart Pendant", price: 95, imageUrl: "https://cdn.shopify.com/s/files/1/2579/7674/files/Ana-Luisa-Jewelry-Necklaces-Pendant-Necklaces-Gold-Heart-Necklace-Lev-Small-Gold.jpg?v=1704804552", discount: 33, category: "pendants", alloy: "gold" },
+    { id: 11, name: "Silver Infinity Necklace", price: 80, imageUrl: "https://images-cdn.ubuy.qa/63643431f1aedd1f45142595-brilliance-fine-jewelry-simulated.jpg", discount: 55, category: "chains", alloy: "silver" },
+    { id: 12, name: "Gold Tennis Bracelet", price: 220, imageUrl: "https://zoom.jewelryimages.net/edge/jaymarkjewelers/images/edge/170-00473.jpg", discount: false, category: "chains", alloy: "gold" },
+    { id: 13, name: "Silver Bangle Bracelet", price: 55, imageUrl: "https://www.ross-simons.com/on/demandware.static/-/Sites-lbh-master/default/dw20241123/images/jewelry-sterling-bangles/902850.jpg?sw=1500", discount: 33, category: "chains", alloy: "silver" },
+    { id: 14, name: "Rose Gold Link Bracelet", price: 140, imageUrl: "https://cdn.itshot.com/product/images/luxurman-mens-and-womens-14k-rose-gold-solid-miami-up-to-9mm-3mm-wide-chain-bracelet-csps14robm_main.jpg?w=1", discount: false, category: "chains", alloy: "rose gold" },
+    { id: 15, name: "Gold Cuff Bracelet", price: 160, imageUrl: "https://uncommonjames.com/cdn/shop/files/J09B-OFFCUFF-GOLD-1.jpg?v=1721521533&width=1946", discount: 10, category: "chains", alloy: "gold" },
+    { id: 16, name: "Silver Charm Necklace", price: 85, imageUrl: "https://evryjewels.com/cdn/shop/files/coastal-charm-necklace-silver.png?crop=center&height=1200&v=1711137460&width=1200", discount: false, category: "pendants", alloy: "silver" },
+    { id: 17, name: "Gold Locket Pendant", price: 180, imageUrl: "https://uncommonjames.com/cdn/shop/files/J10N-SIMPLEBEAUTY-GOLD-1.jpg?v=1737739333&width=1946", discount: 15, category: "pendants", alloy: "gold" },
+    { id: 18, name: "Pearl Pendant Necklace", price: 110, imageUrl: "https://thefreshwaterpearlcompany.com/cdn/shop/products/LilianaNecklace.jpg?v=1681876152&width=1946", discount: false, category: "pendants", alloy: "silver" },
+    { id: 19, name: "Diamond Hoop Ring", price: 200, imageUrl: "https://100ways.com/cdn/shop/files/9071-rings-95.jpg?v=1730932764", discount: 15, category: "rings", alloy: "white gold" },
+    { id: 20, name: "Gold Band Ring", price: 125, imageUrl: "https://jabizuteria.pl/637/gold-ring-band-with-diamond.jpg", discount: false, category: "rings", alloy: "gold" },
+    { id: 21, name: "Silver Stackable Ring", price: 40, imageUrl: "https://media.douglas.pl/medias/https-media-prod-eu-1.mirakl.net-SOURCE-ba09c14037454923a7dc7be36b416a7a.jpg?context=bWFzdGVyfGltYWdlc3wxMDAzMjN8aW1hZ2UvanBlZ3xhRGhqTDJnME9DODVNVEl3TVRVMk16RTVOemMwTDJoMGRIQnpPaTh2YldWa2FXRXRjSEp2WkMxbGRTMHhMbTFwY21GcmJDNXVaWFF2VTA5VlVrTkZMMkpoTURsak1UUXdNemMwTlRRNU1qTmhOMlJqTjJKbE16WmlOREUyWVRkaHw3ZTVhODBkZTIzYjU1ZjdiY2QxMTA3MThkNjdmMWU0YzBmNmJlYmVlYjNjZWI1ZTNjODU5NWVkOTM1NjE1NTcy&grid=true&imPolicy=grayScaled", discount: 13, category: "rings", alloy: "silver" },
+    { id: 22, name: "Rose Gold Engagement Ring", price: 320, imageUrl: "https://uk-media.glamira.com/media/product/newgeneration/view/1/sku/15549gisu1/diamond/diamond-Brillant_AAA/stone2/diamond-Brillant_AAA/stone3/diamond-Brillant_AAA/alloycolour/red.jpg", discount: false, category: "rings", alloy: "rose gold" },
+    { id: 23, name: "Gold Signet Ring", price: 150, imageUrl: "https://laujewellery.pl/cdn/shop/files/lau-jewellery-signetringonyxgold.jpg?crop=center&height=1200&v=1699807552&width=1200", discount: 20, category: "rings", alloy: "gold" },
+    { id: 24, name: "Silver Cocktail Ring", price: 95, imageUrl: "https://i.etsystatic.com/32110532/r/il/2defc9/3928681311/il_fullxfull.3928681311_6d20.jpg", discount: false, category: "rings", alloy: "silver" },
+    { id: 25, name: "Diamond Eternity Band", price: 280, imageUrl: "https://www.bsa-images.com/kormanfinejewelry/Inbox/120-00395.jpg", discount: 8, category: "rings", alloy: "white gold" },
+    { id: 26, name: "Gold Anklet Chain", price: 70, imageUrl: "https://www.hsamuel.co.uk/productimages/processed/V-3156230_0_800.jpg?pristine=true", discount: 10, category: "chains", alloy: "gold" },
+    { id: 27, name: "Silver Anklet Chain", price: 35, imageUrl: "https://cfs3.monicavinader.com/images/pdp-full/15788272-ss-ak-st10-non-f1.jpg", discount: false, category: "chains", alloy: "silver" },
+    { id: 28, name: "Rose Gold Body Chain", price: 190, imageUrl: "https://medleyjewellery.com.au/cdn/shop/files/fundamental-chain-necklace-in-rose-gold-medley-jewellery-necklace-39714066694374.jpg?v=1690506550", discount: true, category: "chains", alloy: "rose gold" },
+    { id: 29, name: "Gold Name Necklace", price: 105, imageUrl: "https://image.brilliantearth.com/media/product_images/XE/BE4D903_yellow_top.jpg", discount: false, category: "pendants", alloy: "gold" },
+    { id: 30, name: "Silver Bar Necklace", price: 65, imageUrl: "https://thesilverstore.com.au/cdn/shop/files/mens-sterling-silver-bar-necklace-with-curb-chain.jpg?v=1713750346", discount: 25, category: "pendants", alloy: "silver" },
+    { id: 31, name: "Gold Stud Earrings", price: 100, imageUrl: "https://cdn.oakandluna.com/digital-asset/product/round-diamond-stud-earrings-1-ct-14k-yellow-solid-gold-3.jpg", discount: false, category: "earrings", alloy: "gold" },
+    { id: 32, name: "Silver Hoop Earrings", price: 55, imageUrl: "https://highsparksilver.com/cdn/shop/products/12MM-01_3.jpg?v=1736581848&width=1445", discount: 17, category: "earrings", alloy: "silver" },
+    { id: 33, name: "Diamond Stud Earrings", price: 275, imageUrl: "https://www.diamondmansion.com/media/catalog/product/2/_/2_carat_diamond_stud_earrings_1.jpg?auto=webp&format=pjpg&width=1279&height=1598.75&fit=cover", discount: false, category: "earrings", alloy: "white gold" },
+    { id: 34, name: "Pearl Stud Earrings", price: 60, imageUrl: "https://assets.manufactum.de/p/075/075473/75473_01.jpg/stud-earrings-freshwater-pearls.jpg?profile=pdsmain_1500", discount: 13, category: "earrings", alloy: "silver" },
+    { id: 35, name: "Gold Choker Necklace", price: 180, imageUrl: "https://www.tanishq.com/on/demandware.static/-/Sites-Tanishq-site-catalog/default/dwb04e1c21/images/hi-res/511159NSYAA00_1.jpg", discount: false, category: "chains", alloy: "gold" },
+    { id: 36, name: "Silver Collar Necklace", price: 95, imageUrl: "https://www.carruthersjewellers.co.uk/cdn/shop/products/617.jpg?v=1624634402", discount: 55, category: "chains", alloy: "silver" },
+    { id: 37, name: "Rose Gold Charm Bracelet", price: 145, imageUrl: "https://www.mauricesjewelers.com/cdn/shop/products/MB001728_D_R_e07d1485-7428-46a8-895e-82c7707559bc.jpg?v=1628628167", discount: false, category: "chains", alloy: "rose gold" },
+    { id: 38, name: "Gold Lariat Necklace", price: 160, imageUrl: "https://content.thewosgroup.com/productimage/37251283/37251283_1.jpg", discount: 40, category: "chains", alloy: "gold" },
+    { id: 39, name: "Silver Cross Pendant", price: 70, imageUrl: "https://www.alexandani.com/cdn/shop/products/PC18EN11S_FRONT_866dd383-93fd-46e6-a698-438ee1363f3c.jpg?v=1737144404", discount: false, category: "pendants", alloy: "silver" },
+    { id: 40, name: "Gold Cross Pendant", price: 120, imageUrl: "https://m.media-amazon.com/images/I/61lqmwkR09L.jpg", discount: 15, category: "pendants", alloy: "gold" },
+    { id: 41, name: "Diamond Tennis Necklace", price: 400, imageUrl: "https://cdn11.bigcommerce.com/s-y73h7mn55y/images/stencil/1280x1280/products/125929/139691/aXUuRspbMpUYlRZLDVk4dW7I8Yf52PiNd83YXwK1fRoeJYXG5GrWqt48vzmzS1Kr__91940.1731553142.jpg?c=2", discount: false, category: "chains", alloy: "white gold" },
+    { id: 42, name: "Silver Tassel Earrings", price: 65, imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/elsa-perettimesh-tassel-earrings-31895715_1043152_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&", discount: true, category: "earrings", alloy: "silver" },
+    { id: 43, name: "Gold Tassel Earrings", price: 130, imageUrl: "https://zoom.jewelryimages.net/edge/hinghamjewelers/images/edge/425-02577.jpg", discount: false, category: "earrings", alloy: "gold" },
+    { id: 44, name: "Rose Gold Hoop Ring", price: 145, imageUrl: "https://www.byinviteonly.shop/cdn/shop/products/Basic-Hoop-RoseGold-1.jpg?v=1632380092", discount: 8, category: "rings", alloy: "rose gold" },
+    { id: 45, name: "Silver Promise Ring", price: 80, imageUrl: "https://jewelrybyjohan.com/cdn/shop/products/608ae7ce9380960de294a409a1ff0458.jpg?v=1629731729", discount: false, category: "rings", alloy: "silver" },
+    { id: 46, name: "Gold Birthstone Pendant", price: 115, imageUrl: "https://media.davidyurman.com/productsv2/KN1042/KN1042-88/KN1042-88AAM.jpg", discount: 25, category: "pendants", alloy: "gold" },
+    { id: 47, name: "Silver Birthstone Pendant", price: 90, imageUrl: "https://cdn11.bigcommerce.com/s-fppzgy5cqm/images/stencil/1280x1280/products/203/612/0303093-01__67678.1555674847.jpg?c=2", discount: false, category: "pendants", alloy: "silver" },
+    { id: 48, name: "Diamond Cluster Ring", price: 290, imageUrl: "https://www.chisholmhunter.co.uk/media/catalog/product/cache/5bd6772eb7808e2029bda666cf64b356/1/-/1-008-01-0245_4.jpg", discount: 22, category: "rings", alloy: "white gold" },
+    { id: 49, name: "Gold Pearl Necklace", price: 200, imageUrl: "https://veradesignjewellery.com/cdn/shop/files/VD-N969-YG-P-2_1024x1024.jpg?v=1747930138", discount: false, category: "chains", alloy: "gold" },
+    { id: 50, name: "Silver Pearl Bracelet", price: 85, imageUrl: "https://cdn11.bigcommerce.com/s-thiekn1go9/images/stencil/1280x1280/products/920/1287/Victoria_girls_pearl_bracelet_w-silver_1418P-SS_web__15765.1612217834.jpg?c=2", discount: 33, category: "chains", alloy: "silver" },
+];
+
+
+export let messages = [];
+
+export let newsletter = [];
+

@@ -1,0 +1,129 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/reset.scss';
+@import '../../styles/global.scss';
+
+
+
+.out {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: relative;
+        background-color: var(--color-light-gray);
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 70%;
+        border-radius: 15px;
+        object-fit: cover;
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        position: relative;
+        display: inline;
+        margin-right: 5px;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--color-dark-brown);
+    }
+
+    &__sale {
+        position: absolute;
+        top: 22px;
+        left: 0;
+        font-weight: 500;
+    }
+
+    @media (min-width: $tablet) {
+
+        &__btn {
+            font-size: 20px;
+        }
+
+        &__subtitle {
+            font-size: 22px;
+        }
+
+        &__title {
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        &__price {
+            font-size: 20px;
+        }
+
+        &__sale {
+            font-size: 18px;
+            top: 26px;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        &__title {
+            font-size: 22px;
+        }
+
+        &__price {
+            font-size: 22px;
+        }
+
+        &__sale {
+            font-size: 20px;
+            top: 30px;
+        }
+    }
+
+}
+
+.cart {
+    position: absolute;
+    bottom: -50px; // изначально скрыт за пределами
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: bottom 0.3s ease;
+    opacity: 0;
+
+    &__btn {
+        width: 100%;
+        z-index: 10;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: var(--color-light-brown);
+        color: var(--color-white);
+        padding: 12px;
+        cursor: pointer;
+        border: none;
+    }
+
+
+    @media (min-width: $desktop) {
+        &__btn {
+            font-size: 18px;
+        }
+    }
+}
+
+.out__item {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .cart {
+        bottom: 0;
+        opacity: 1;
+    }
+}
