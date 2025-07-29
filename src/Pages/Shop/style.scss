@@ -310,8 +310,12 @@ option {
 .catalog__container .out {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(3, 270px);
     gap: 15px;
+
+    &__item {
+        min-width: 210px;
+    }
 
     @media (min-width: $tablet) {
         grid-template-columns: repeat(2, 1fr);
@@ -322,7 +326,12 @@ option {
 
     @media (min-width: $desktop) {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 350px);
         gap: 25px;
+
+        // &__item {
+        //     min-height: 100%;
+        // }
     }
 }
 

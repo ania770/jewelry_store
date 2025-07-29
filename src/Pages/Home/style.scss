@@ -223,10 +223,10 @@
     font-size: 18px;
 }
 
-.out {
+.home__out-container .out {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 280px);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 24px;
 

@@ -13,7 +13,7 @@
         background-color: var(--color-light-gray);
         padding: 15px 10px;
         border-radius: 15px;
-        min-width: 210px;
+        // min-width: 210px;
     }
 
     &__img {
@@ -25,9 +25,9 @@
     }
 
     &__title {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
     }
 
     &__price {
@@ -35,14 +35,15 @@
         display: inline;
         margin-right: 5px;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 18px;
         color: var(--color-dark-brown);
     }
 
     &__sale {
         position: absolute;
-        top: 22px;
+        top: 20px;
         left: 0;
+        font-size: 18px;
         font-weight: 500;
     }
 
@@ -57,7 +58,7 @@
         }
 
         &__title {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 3px;
         }
 
@@ -66,23 +67,23 @@
         }
 
         &__sale {
-            font-size: 18px;
+            font-size: 20px;
             top: 26px;
         }
     }
 
     @media (min-width: $desktop) {
         &__title {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         &__price {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         &__sale {
             font-size: 20px;
-            top: 30px;
+            top: 22px;
         }
     }
 
