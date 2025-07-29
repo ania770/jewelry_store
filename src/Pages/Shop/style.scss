@@ -309,12 +309,13 @@ option {
 
 .catalog__container .out {
     display: grid;
-    grid-template-columns: repeat(2, 1ft);
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
     gap: 15px;
 
     @media (min-width: $tablet) {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
         margin: 10px;
 
     }

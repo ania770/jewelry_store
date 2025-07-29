@@ -61,7 +61,7 @@
             border-bottom: 1px var(--color-dark-gray) solid;
 
             & a {
-                width: 100%;
+                // width: 100%;
                 text-align: center;
                 padding: 20px 15px;
             }
@@ -232,7 +232,7 @@
                 align-items: center;
                 gap: 10px;
                 background: none;
-
+                font-size: 16px;
 
             }
         }
@@ -436,6 +436,10 @@
 
         &__nav-list {
             margin-right: 150px;
+
+            &-item a {
+                padding: 0 10px;
+            }
         }
     }
 
