@@ -53,13 +53,14 @@ export default function Bag() {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="bag__total">
-                                <h3 className='bag__total-text'>Total: ${getTotalPrice()}</h3>
-                                <Link to='/shipping'> <button className='bag__total-btn'>Buy now</button></Link>
 
-                            </div>
                         </>
                     )}
+                </div>
+                <div className="bag__total">
+                    <h3 className='bag__total-text'>Total: ${getTotalPrice()}</h3>
+                    <Link to='/shipping'> <button className='bag__total-btn'>Buy now</button></Link>
+
                 </div>
             </section>
             <Footer />
