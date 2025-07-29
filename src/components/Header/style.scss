@@ -61,7 +61,7 @@
             border-bottom: 1px var(--color-dark-gray) solid;
 
             & a {
-                // width: 100%;
+                width: 100%;
                 text-align: center;
                 padding: 20px 15px;
             }
@@ -254,9 +254,7 @@
             border-radius: 0;
 
             @media (min-width: $tablet) {
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
+
                 max-width: 100px;
                 min-width: 20px;
                 border-radius: 8px;
@@ -268,12 +266,17 @@
 
                 & a {
                     padding: 0;
+                    padding: 5px 10px;
+                    border-radius: 8px;
+                    transition: background-color 0.3s, transform 0.3s;
+
+                    &:hover {
+                        background-color: var(--color-light-gray);
+                        transition: 0.3s;
+                    }
                 }
 
-                &:hover {
-                    background-color: var(--color-light-gray);
-                    transition: 0.3s;
-                }
+
 
             }
 
